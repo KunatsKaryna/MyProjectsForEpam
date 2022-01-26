@@ -1,0 +1,24 @@
+{
+  "name": "k",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx wdio run wdio.conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@wdio/cli": "^7.16.13"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.10",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.16.9",
+    "@wdio/local-runner": "^7.16.13",
+    "@wdio/mocha-framework": "^7.16.13",
+    "@wdio/spec-reporter": "^7.16.13",
+    "chromedriver": "^97.0.0",
+    "wdio-chromedriver-service": "^7.2.6"
+  }
+}
