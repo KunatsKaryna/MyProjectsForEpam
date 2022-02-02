@@ -27,6 +27,7 @@ describe('Checking mail progress', function() {
   });
 
   it('should check that the mail can be saved as a draft',async function() { 
+      expect ('//span[@data-test-folder-name="Draft"]').toExist;
       await $('//span[@data-test-folder-name="Draft"]').click();
       await $('//span[@data-test-folder-name="Draft"]').waitForDisplayed({ timeout: 5000 });
   });
