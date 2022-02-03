@@ -27,7 +27,7 @@ describe('Checking mail progress', function() {
   });
 
   it('should check that the mail can be saved as a draft',async function() { 
-      expect ('//span[@data-test-folder-name="Draft"]').toExist;
+      expect ('//span[@data-test-folder-name="Draft"]').toExist();
       await $('//span[@data-test-folder-name="Draft"]').click();
       await $('//span[@data-test-folder-name="Draft"]').waitForDisplayed({ timeout: 5000 });
   });
@@ -46,7 +46,7 @@ describe('Checking mail progress', function() {
 });
 
   it('should check that the draft can be send',async function() {
-      expect ('//button[@data-test-id="compose-send-button"]').toExist;
+      expect ('//button[@data-test-id="compose-send-button"]').toExist();
       await $('//button[@data-test-id="compose-send-button"]').click();
 }); 
 
